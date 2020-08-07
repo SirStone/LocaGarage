@@ -15,7 +15,7 @@ import robocode.ScannedRobotEvent;
  */
 public class Statics {
 	public static final double ONEDEGREE = FastMath.PI/180;
-	public static final double THREEOVERTWOPI = 3/2 * PI;
+	public static final double THREEOVERTWOPI = 3/2 * FastMath.PI;
 	
 	public static int[] scalarEncoder(double input, double minVal, double maxVal, int w, boolean periodic, int radius) {
 		if(w%2==0) throw new IllegalStateException("W must be an odd number (to eliminate centering difficulty)");
